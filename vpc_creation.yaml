@@ -1,0 +1,17 @@
+---
+- name: Creation of VPC in OHIO region
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Import VPC variables
+      Include_vars: vars/vpc_setup
+    - name: create a VPC with default tenancy and a couple of tags
+      ec2_vpc_net:
+        name: vprofile-vpc
+        cidr_block: '{{ vpcCidr }}'
+        region: '{{ region }}'
+        tags:
+          Name: vprofile-vpc-pro
+          project: vprofile
+        tenancy: default

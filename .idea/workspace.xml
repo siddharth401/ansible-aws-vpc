@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="Variable file addition">
-      <change afterPath="$PROJECT_DIR$/vpc_setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bastion_setup" beforeDir="false" afterPath="$PROJECT_DIR$/vars/Bastion_setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpc_setup" beforeDir="false" afterPath="$PROJECT_DIR$/vars/vpc_setup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +34,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/AnsiblePlugin-0.92.zip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vars" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ansible-aws-vpc\vars" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ansible-aws-vpc\vars" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
