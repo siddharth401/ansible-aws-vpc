@@ -105,10 +105,10 @@
     - debug:
          msg: '{{ item }}'
       loop:
-         -  vpc_register.vpc.id
-         -  public_subnet1.subnet.id
-         -  public_subnet2.subnet.id
-         -  public_subnet3.subnet.id
-         -  igw.gateway_id
-         -  public_route_table.route_table.id
+         -  '{{ vpc_register.vpc.id }}'
+         -  '{{ public_subnet1.subnet.id }}'
+         -  '{{ public_subnet2.subnet.id }}'
+         -  '{{ public_subnet3.subnet.id }}'
+         -  '{{ igw.gateway_id }}'
+         -  '{{ public_route_table.route_table.id }}'
 
