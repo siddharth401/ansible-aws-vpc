@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="debug register value">
+    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="subnet addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vpc_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
     </list>
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651405321415</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="subnet addition">
+      <created>1651406825390</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651406825390</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
     <MESSAGE value="vpc_creation file modified" />
     <MESSAGE value="az fixed" />
     <MESSAGE value="debug register value" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug register value" />
+    <MESSAGE value="subnet addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="subnet addition" />
   </component>
 </project>

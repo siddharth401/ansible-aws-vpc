@@ -26,7 +26,7 @@
           cidr: '{{ PubSub1Cidr }}'
           map_public: yes
           tags:
-             Name: public-Subnet-vprofile
+             Name: public-Subnet1-vprofile
       register: public_subnet1
     - name: Creation of  2 public subnets
       ec2_vpc_subnet:
@@ -37,7 +37,7 @@
         cidr: '{{ PubSub2Cidr }}'
         map_public: yes
         tags:
-          Name: public-Subnet-vprofile
+          Name: public-Subnet2-vprofile
       register: public_subnet2
     - name: Creation of  3 public subnets
       ec2_vpc_subnet:
@@ -48,7 +48,7 @@
         cidr: '{{ PubSub3Cidr }}'
         map_public: yes
         tags:
-            Name: public-Subnet-vprofile
+            Name: public-Subnet3-vprofile
       register: public_subnet3
     - name: Creation of  1 private subnets
       ec2_vpc_subnet:
@@ -58,7 +58,7 @@
         az: '{{ zone1 }}'
         cidr: '{{ PrivSub1Cidr }}'
         tags:
-            Name: private-Subnet-vprofile
+            Name: private-Subnet1-vprofile
       register: private_subnet1
     - name: Creation of  2 private subnets
       ec2_vpc_subnet:
@@ -68,7 +68,7 @@
         az: '{{ zone2 }}'
         cidr: '{{ PrivSub2Cidr }}'
         tags:
-          Name: private-Subnet-vprofile
+          Name: private-Subnet2-vprofile
       register: private_subnet2
     - name: Creation of  3 private subnets
       ec2_vpc_subnet:
@@ -78,7 +78,7 @@
         az: '{{ zone3 }}'
         cidr: '{{ PrivSub3Cidr }}'
         tags:
-          Name: private-Subnet-vprofile
+          Name: private-Subnet3-vprofile
       register: private_subnet3
 
 
