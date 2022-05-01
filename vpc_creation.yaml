@@ -102,4 +102,13 @@
           - dest: 0.0.0.0/0
             gateway_id: "{{ igw.gateway_id }}"
       register: public_route_table
+    - debug:
+         msg: '{{ item }}'
+      loop:
+         -  vpc_register.vpc.id
+         -  public_subnet1.subnet.id
+         -  public_subnet2.subnet.id
+         -  public_subnet3.subnet.id
+         -  igw.gateway_id
+         -  public_route_table.route_table.id
 
