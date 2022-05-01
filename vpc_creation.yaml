@@ -5,7 +5,7 @@
   gather_facts: False
   tasks:
     - name: Import VPC variables
-      Include_vars: vars/vpc_setup
+      include_vars: vars/vpc_setup
     - name: create a VPC with default tenancy and a couple of tags
       ec2_vpc_net:
         name: vprofile-vpc
@@ -15,3 +15,16 @@
           Name: vprofile-vpc-pro
           project: vprofile
         tenancy: default
+      register: vpc_register
+
+    - name: Creation of public subnets
+      ec2_vpc_subnet:
+          state: '{{ state }}'
+          vpc_id: '{{ vpc_register.vpc.id }}'
+          region: '{{ region }}'
+          zone: '{{ zone1 }}'
+          cidr: '{{ PubSub1Cidr }}'
+          map_public: yes
+          tags:
+             Name: public-Subnet-vprofile
+      register: public_subnet
