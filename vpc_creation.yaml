@@ -111,4 +111,6 @@
          -  '{{ public_subnet3.subnet.id }}'
          -  '{{ igw.gateway_id }}'
          -  '{{ public_route_table.route_table.id }}'
-
+      copy:
+         content: '{{ item }}'
+         dest: ./local-var
