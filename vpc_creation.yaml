@@ -122,5 +122,5 @@
     - name: Create varibale for vpc output
       copy:
          content: "vpcid: {{ vpc_register.vpc.id }}\npubsub1id: {{ public_subnet1.subnet.id }}\npubsub2id: {{ public_subnet2.subnet.id }}\npubsub3id: {{ public_subnet3.subnet.id }}\nigwid: {{ igw.gateway_id }}\npubRTid: {{ public_route_table.route_table.id }}"
-         dest: var/output_vars
+         dest: vars/output_vars
 
