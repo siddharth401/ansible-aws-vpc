@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="copy variable to file">
+    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="copy variable to file1">
       <change beforePath="$PROJECT_DIR$/vpc_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651423797342</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="copy variable to file1">
+      <created>1651423956616</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651423956616</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +190,7 @@
     <MESSAGE value="variable debug" />
     <MESSAGE value="variable debug fix" />
     <MESSAGE value="copy variable to file" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy variable to file" />
+    <MESSAGE value="copy variable to file1" />
+    <option name="LAST_COMMIT_MESSAGE" value="copy variable to file1" />
   </component>
 </project>
