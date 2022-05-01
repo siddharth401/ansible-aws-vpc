@@ -22,7 +22,7 @@
           state: '{{ state }}'
           vpc_id: '{{ vpc_register.vpc.id }}'
           region: '{{ region }}'
-          zone: '{{ zone1 }}'
+          az: '{{ zone1 }}'
           cidr: '{{ PubSub1Cidr }}'
           map_public: yes
           tags:
