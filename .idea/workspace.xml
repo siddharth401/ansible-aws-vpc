@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="subnet name modification">
+    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="Route table with subnet association">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vpc_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
     </list>
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651407233884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Route table with subnet association">
+      <created>1651419205499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651419205499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +137,7 @@
     <MESSAGE value="debug register value" />
     <MESSAGE value="subnet addition" />
     <MESSAGE value="subnet name modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="subnet name modification" />
+    <MESSAGE value="Route table with subnet association" />
+    <option name="LAST_COMMIT_MESSAGE" value="Route table with subnet association" />
   </component>
 </project>
