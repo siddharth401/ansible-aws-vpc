@@ -111,13 +111,16 @@
          -  '{{ public_subnet3.subnet.id }}'
          -  '{{ igw.gateway_id }}'
          -  '{{ public_route_table.route_table.id }}'
-    - copy:
-         content: '{{ item }}'
-         dest: ./local-var
-      loop:
-        - '{{ vpc_register.vpc.id }}'
-        - '{{ public_subnet1.subnet.id }}'
-        - '{{ public_subnet2.subnet.id }}'
-        - '{{ public_subnet3.subnet.id }}'
-        - '{{ igw.gateway_id }}'
-        - '{{ public_route_table.route_table.id }}'
+    - set_fact:
+         vpcid: '{{ vpc_register.vpc.id }}'
+         pubsub1id: '{{ public_subnet1.subnet.id }}'
+         pubsub2id: '{{ public_subnet2.subnet.id }}'
+         pubsub3id: '{{ public_subnet3.subnet.id }}'
+         igwid: '{{ igw.gateway_id }}'
+         pubRTid: '{{ public_route_table.route_table.id }}'
+         cacheable: yes
+    - name: Create varibale for vpc output
+      copy:
+         content: "vpcid: {{ vpc_register.vpc.id }}\npubsub1id: {{ public_subnet1.subnet.id }}\npubsub2id: {{ public_subnet2.subnet.id }}\npubsub3id: {{ public_subnet3.subnet.id }}\nigwid: {{ igw.gateway_id }}\npubRTid: {{ public_route_table.route_table.id }}"
+         dest: var/output_vars
+
