@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="Route table fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vpc_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="Route table fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651420219491</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Route table fix">
+      <created>1651423127429</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651423127429</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
