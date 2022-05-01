@@ -16,6 +16,8 @@
           project: vprofile
         tenancy: default
       register: vpc_register
+    - name: Debug of register value
+      msg: '{{ vpc_register }}'
 
     - name: Creation of public subnets
       ec2_vpc_subnet:
