@@ -80,7 +80,25 @@
         tags:
           Name: private-Subnet3-vprofile
       register: private_subnet3
-
-
-
+###creation of internet Gateway and route tables
+    - name: internet gateway creation
+      ec2_vpc_igw:
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        state: '{{ state }}'
+      register: igw-out
+###creation of route table and associate subnet with it
+    - name: Set up public subnet route table
+      ec2_vpc_route_table:
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        tags:
+          Name: Vprofile-Route-Table
+        subnets:
+          - "{{ public_subnet1.subnet.id }}"
+          - "{{ public_subnet2.subnet.id }}"
+          - "{{ public_subnet3.subnet_id }}"
+        routes:
+          - dest: 0.0.0.0/0
+            gateway_id: "{{ igw-out.gateway_id }}"
+      register: public_route_table
 
