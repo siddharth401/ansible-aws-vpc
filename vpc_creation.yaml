@@ -17,7 +17,7 @@
         tenancy: default
       register: vpc_register
 
-    - name: Creation of public subnets
+    - name: Creation of  1 public subnets
       ec2_vpc_subnet:
           state: '{{ state }}'
           vpc_id: '{{ vpc_register.vpc.id }}'
@@ -27,4 +27,60 @@
           map_public: yes
           tags:
              Name: public-Subnet-vprofile
-      register: public_subnet
+      register: public_subnet1
+    - name: Creation of  2 public subnets
+      ec2_vpc_subnet:
+        state: '{{ state }}'
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        az: '{{ zone2 }}'
+        cidr: '{{ PubSub2Cidr }}'
+        map_public: yes
+        tags:
+          Name: public-Subnet-vprofile
+      register: public_subnet2
+    - name: Creation of  3 public subnets
+      ec2_vpc_subnet:
+        state: '{{ state }}'
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        az: '{{ zone3 }}'
+        cidr: '{{ PubSub3Cidr }}'
+        map_public: yes
+        tags:
+            Name: public-Subnet-vprofile
+      register: public_subnet3
+    - name: Creation of  1 private subnets
+      ec2_vpc_subnet:
+        state: '{{ state }}'
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        az: '{{ zone1 }}'
+        cidr: '{{ PrivSub1Cidr }}'
+        tags:
+            Name: private-Subnet-vprofile
+      register: private_subnet1
+    - name: Creation of  2 private subnets
+      ec2_vpc_subnet:
+        state: '{{ state }}'
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        az: '{{ zone2 }}'
+        cidr: '{{ PrivSub2Cidr }}'
+        tags:
+          Name: private-Subnet-vprofile
+      register: private_subnet2
+    - name: Creation of  3 private subnets
+      ec2_vpc_subnet:
+        state: '{{ state }}'
+        vpc_id: '{{ vpc_register.vpc.id }}'
+        region: '{{ region }}'
+        az: '{{ zone3 }}'
+        cidr: '{{ PrivSub3Cidr }}'
+        tags:
+          Name: private-Subnet-vprofile
+      register: private_subnet3
+
+
+
+
