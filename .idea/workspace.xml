@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="bastion file modfification2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="bastion host creation">
       <change beforePath="$PROJECT_DIR$/bastion_host_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bastion_host_creation.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651581846447</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="bastion host creation">
+      <created>1651586608754</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1651586608754</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +253,7 @@
     <MESSAGE value="bastion file modfification" />
     <MESSAGE value="bastion file modfification1" />
     <MESSAGE value="bastion file modfification2" />
-    <option name="LAST_COMMIT_MESSAGE" value="bastion file modfification2" />
+    <MESSAGE value="bastion host creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="bastion host creation" />
   </component>
 </project>
