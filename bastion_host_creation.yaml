@@ -5,17 +5,38 @@
   tasks:
     - include_vars: vars/Bastion_setup
     - include_vars: vars/output_vars
+    - name: security group creation for bastion host
+      ec2_group:
+        name: bastion-host-sg
+        description: sg with rule descriptions
+        vpc_id: '{{ vpcid }}'
+        region: '{{ region }}'
+        rules:
+          - proto: tcp
+            ports:
+              - 22
+            cidr_ip: '{{ SourceIP }}'
+            rule_desc: allow myIP on port 22
+      register: bastion_security
     - name: Launching of ec2-instances
       ec2:
         key_name: ansible-keypair
         instance_type: t2.micro
         image: '{{ ami }}'
         region: '{{ region }}'
+        group: '{{ bastion_security. }}'
         wait: yes
         wait_timeout: 500
-        count: 1
+        exact_count: 1
         instance_tags:
+           Name: Bastion-host
            Project: vprofile-bastion-host
+           owner: Devops team
+        count_tag:
+           Name: Bastion-host
+           Project: vprofile-bastion-host
+           owner: Devops team
+        group_id: '{{ bastion_security.group_id }}'
         vpc_subnet_id: '{{ pubsub1id }}'
         assign_public_ip: yes
       register: bastionhost_out
