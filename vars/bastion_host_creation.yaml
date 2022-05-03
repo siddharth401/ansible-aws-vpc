@@ -1,0 +1,17 @@
+---
+- name: Creation of bastion host in aws
+  tasks:
+    - include_vars: vars/Bastion_setup
+    - name: Launching of ec2-instances
+      ec2:
+        key_name: ansible-keypair
+        instance_type: t2.micro
+        image: '{{ ami }}'
+        wait: yes
+        wait_timeout: 500
+        count: 1
+        instance_tags:
+           Project: vprofile-bastion-host
+        monitoring: yes
+        vpc_subnet_id: '{{ '
+        assign_public_ip: yes
