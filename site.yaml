@@ -1,0 +1,6 @@
+---
+- name: import of bastion host
+  import_playbook: bastion_host_creation.yaml
+
+- name: import of vpc_creation playbook
+  import_playbook: vpc_creation.yaml
