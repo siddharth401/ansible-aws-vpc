@@ -1,5 +1,7 @@
 ---
 - name: Creation of bastion host in aws
+  hosts: localhost
+  connection: local
   tasks:
     - include_vars: vars/Bastion_setup
     - include_vars: vars/output_vars
