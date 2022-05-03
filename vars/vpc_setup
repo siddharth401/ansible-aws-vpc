@@ -26,3 +26,9 @@ zone2: us-east-2b
 zone3: us-east-2c
 
 state: present
+
+##Information regarding bastion host
+
+ami: "ami-0c6a6b0e75b2b6ce7"
+SourceIP: "223.190.44.35/32"
+region: "us-east-2"

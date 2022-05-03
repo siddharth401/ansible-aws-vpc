@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009bca97-ee4c-43c7-9690-aa84e57bba51" name="Changes" comment="copy variable to file2">
-      <change beforePath="$PROJECT_DIR$/vpc_creation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vpc_creation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/vpc_setup" beforeDir="false" afterPath="$PROJECT_DIR$/vars/vpc_setup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
