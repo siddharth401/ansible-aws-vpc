@@ -1,5 +1,5 @@
 ##Information regarding bastion host
 
 ami: "ami-0c6a6b0e75b2b6ce7"
-SourceIP: "223.190.44.35/32"
+SourceIP: "223.190.33.151/32"
 region: "us-east-2"
